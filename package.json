@@ -2,8 +2,29 @@
   "name": "npm-library-template",
   "version": "0.0.1",
   "description": "template for creating npm library",
-  "main": "index.ts",
-  "repository": "https://github.com/sunadoi/npm-library-template",
+  "type": "module",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunadoi/npm-library-template"
+  },
+  "keywords": [
+    "react"
+  ],
   "author": "sunadoi",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
 }
