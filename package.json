@@ -1,0 +1,9 @@
+{
+  "name": "npm-library-template",
+  "version": "0.0.1",
+  "description": "template for creating npm library",
+  "main": "index.ts",
+  "repository": "https://github.com/sunadoi/npm-library-template",
+  "author": "sunadoi",
+  "license": "MIT"
+}
