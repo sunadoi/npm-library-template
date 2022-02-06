@@ -21,6 +21,7 @@ build({
   entryPoints: ["./src/index.ts"],
   outdir: "lib",
   bundle: true,
+  sourcemap: true,
   minify: process.env.NODE_ENV === "production",
   external: ["react", "react-dom"],
   splitting: true,
