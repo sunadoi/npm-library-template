@@ -28,7 +28,7 @@ jobs:
           tag: v${{ env.CURRENT_PACKAGE_VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         id: cache_node_modules
         with:
           path: "**/node_modules"
